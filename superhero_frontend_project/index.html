@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desenhos de Sucesso - SuperHero (anos 90/2000)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+  <header class="site-header">
+    <h1>Desenhos de Sucesso (90s / 2000s)</h1>
+    <p class="subtitle">Consumo de API SuperHero — cards dinâmicos criados com JavaScript</p>
+    <div class="search">
+      <input id="searchInput" placeholder="Buscar personagem (ex: Batman, Spider-Man)..." />
+      <button id="searchBtn">Buscar</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="cardsContainer" class="cards-grid" aria-live="polite">
+      <!-- Cards gerados dinamicamente aqui -->
+    </section>
+    <div id="loading" class="loading">Carregando personagens...</div>
+  </main>
+
+  <footer>
+    <p>Projeto Front-End • Consome SuperHero API • Desenvolvido com HTML, CSS e JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
