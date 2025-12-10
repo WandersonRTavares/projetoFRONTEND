@@ -1,3 +1,4 @@
+
 # SuperHero Front-End Project
 
 Projeto: Aplicação Front-End que consome a API superhero para exibir cards de personagens.
@@ -29,3 +30,14 @@ Tecnologias usadas: HTML, CSS, JavaScript e  API.
    git push -u origin main
 
 3. Para publicar no GitHub Pages: Settings -> Pages -> escolha branch `main` / / (root) -> Salve. Aguarde alguns minutos.
+
+OBS: A SuperHeroAPI deixou de liberar IMAGENS via HTTP para navegadores. Mesmo usando token correto, proxy, HTTPS, GitHub Pages ou localhost → As imagens NÃO carregam mais. Nenhum site no mundo consegue exibir imagens da SuperHeroAPI hoje, a não ser backend próprio com proxy privado.
+
+Tendo este problema então, pesquisei e decidi utilizar outra api grátis, API alternativa não-oficial SUPERHERO API (AKABAB) — FUNCIONA PERFEITAMENTE
+
+https://akabab.github.io/superhero-api/api/
+
+Não precisa token
+Não tem bloqueio
+Imagens sempre carregam
+Respostas limpas, completas, modernas
