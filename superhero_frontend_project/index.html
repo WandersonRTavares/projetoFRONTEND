@@ -1,34 +1,45 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Desenhos de Sucesso - SuperHero (anos 90/2000)</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Arquivo de Super Herois — personagens dos anos 90/2000</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-  <header class="site-header">
-    <h1>Desenhos de Sucesso (90s / 2000s)</h1>
-    <p class="subtitle">Consumo de API SuperHero — cards dinâmicos criados com JavaScript</p>
-    <div class="search">
-      <input id="searchInput" placeholder="Buscar personagem (ex: Batman, Spider-Man)..." />
-      <button id="searchBtn">Buscar</button>
+  <header>
+    <h1>Arquivo de Super Herois — personagens dos anos 90 / 2000</h1>
+    <p class="subtitle">Busque personagens e veja cards gerados dinamicamente via JavaScript (SuperHero API)</p>
+    <div class="controls">
+      <input id="tokenInput" placeholder="Cole aqui seu ACCESS_TOKEN da SuperHero API" />
+      <input id="searchInput" placeholder="Pesquisar personagem (ex: Batman, Spider-Man)" />
+      <button id="searchBtn">Pesquisar</button>
+      <button id="randomBtn">Personagem aleatório</button>
     </div>
   </header>
 
   <main>
-    <section id="cardsContainer" class="cards-grid" aria-live="polite">
-      <!-- Cards gerados dinamicamente aqui -->
-    </section>
-    <div id="loading" class="loading">Carregando personagens...</div>
+    <section id="cards" class="cards-grid" aria-live="polite"></section>
   </main>
 
   <footer>
-    <p>Projeto Front-End • Consome SuperHero API • Desenvolvido com HTML, CSS e JS</p>
+    <p>Projeto para avaliação — Consome SuperHero API. Veja README para instruções.</p>
   </footer>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <img class="card-img" alt="imagem do personagem" />
+      <div class="card-body">
+        <h2 class="card-name"></h2>
+        <p class="card-sub">Origem / Full name</p>
+        <ul class="stats"></ul>
+      </div>
+    </article>
+  </template>
 
   <script src="script.js"></script>
 </body>
+
 </html>
